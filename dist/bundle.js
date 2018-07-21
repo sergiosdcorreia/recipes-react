@@ -94,19 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _log = __webpack_require__(/*! ./log */ \"./log.js\");\n\nvar _log2 = _interopRequireDefault(_log);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _log2.default)(\"Hello world!\");\n\n//# sourceURL=webpack:///./index.js?");
-
-/***/ }),
-
-/***/ "./log.js":
-/*!****************!*\
-  !*** ./log.js ***!
-  \****************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nOb ject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar log = function log(string) {\n    console.log(string);\n};\n\nexports.default = log;\n\n//# sourceURL=webpack:///./log.js?");
+eval("\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ })
 
