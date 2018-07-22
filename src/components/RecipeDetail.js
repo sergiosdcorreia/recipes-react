@@ -1,29 +1,42 @@
 import React from 'react';
 
-const RecipeDetail = ( props ) => (
-    <div style={props.style}>
-        <h2>Chocolate Mousse</h2>
+const RecipeDetail = ( props ) => {
+    if (!props.recipe) {
+        return (
+        <p style={props.style}>
+            Please select a recipe to see the recipe detail.
+        </p>
+        );
+    }
 
+    return (
+    <div style={props.style}>
+        <h2>{props.recipe.name}</h2>
+        <img src={props.recipe.image} />
         <div>
-            <span>Dessert</span>
-            <span>6 persons</span>
+            <span>{props.recipe.category}</span>
+            <span>{props.recipe.calories}</span>
         </div>
 
         <h3>Ingredients</h3>
         <ul>
-            <li>Cooking Chocolate</li>
-            <li>Eggs</li>
-            <li>Butter</li>
-            <li>Sugar</li>
+            {props.recipe.ingredients.map(ingredient => (
+                <li key={ingredient}>
+                    {ingredient}
+                </li>
+            ))}
         </ul>
 
         <h3>Steps</h3>
         <ol>
-            <li>Heat the chocolate with the butter.</li>
-            <li>Mix the eggs and the sugar.</li>
-            <li>Mix everything slowly and put in cups and take it to the fridge.</li>
+            {props.recipe.steps.map(step => (
+                <li key={step}>
+                    {step}
+                </li>
+            ))}
         </ol>
     </div>
-)
+    )
+}
 
 export default RecipeDetail;
