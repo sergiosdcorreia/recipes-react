@@ -1,0 +1,51 @@
+{
+  "recipes":
+  [
+    {
+      "id":1,
+      "name":"Creepy Halloween Skull Cupcakes",
+      "category":"Dessert"
+    },
+    {
+      "id":2,
+      "name":"Blueberry Sour Cream Coffee Cake",
+      "category":"Dessert"
+    },
+    {
+      "id":3,
+      "name":"To Die For Fettuccine Alfredo",
+      "category":"Pasta"
+    },
+    {
+      "id":4,
+      "name":"Caprese cake",
+      "category":"Meal"
+    },
+    {
+      "id":5,
+      "name":"Light and Fluffy Spinach Quiche",
+      "category":"Dessert"
+    },
+    {
+      "id":6,
+      "name":"Chicken Cordon Bleu II",
+      "category":"Meat"
+    },
+    {
+      "id":7,
+      "name":"Banana Banana Bread",
+      "category":"Bread"
+    },
+    {
+      "id":8,
+      "name":"Beef Stew VI",
+      "category":"Meat"
+    }
+  ],
+  "desserts":
+  [
+    {
+      "id": 1
+    }
+  ]
+}
